@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.vend.gateway.notification.autoconfig.mail.SmtpEmailAutoConfig
+com.vend.gateway.notification.autoconfig.sms.TwilioSMSAutoConfig
+com.vend.gateway.notification.autoconfig.fcm.FCMAutoConfig

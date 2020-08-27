@@ -1,0 +1,38 @@
+vend:
+  notification:
+    max-retries: 3
+    retry-delay: 5000
+
+    push:
+      fcm:
+        enabled: true
+        google-fcm-url: ${fcm-url}
+        google-fcm-access-token-request-scope: ${fcm-access-token-request-scope}
+        google-fcm-private-key-file: ${key-file-name}
+        google-fcm-connect-timeout-milliseconds: 2000
+        google-fcm-read-timeout-milliseconds: 5000
+
+    mail:
+      enabled: true
+      host: ${mail.host}
+      port: ${mail.port}
+      ssl-enabled: false
+      tls-enabled: false
+      username: ${mail.username}
+      password: ${mail.password}
+      connection-timeout: 20000
+      smtp-timeout: 30000
+
+    sms:
+      twilio:
+        enabled: true
+        account-s-i-d: ${twilio.account.sid}
+        twilio-auth-token: ${twilio.auth.token}
+        twilio-contact-number: ${twilio.contact-number}
+
+spring:
+  jackson:
+    default-property-inclusion: NON_NULL
+logging:
+  level:
+    root: debug
