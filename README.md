@@ -1,15 +1,15 @@
 # README #
 This module implements <b>messaging, notification</b> features, and it is a <b>spring-boot</b> based project.
-Developers can easily include this module to use the provided features by while setting minimal configuration.
+Developers can easily include this module to use the provided features with minimal configuration.
 Following are the features that you can easily configure and get up and running conveniently:
 
 - Sending Emails
 - Sending SMS
 - Sending Firebase Push Notifications 
 - Retry Mechanism (upon failure of sent Messages/Notifications it tries resending them on its own)
+- AutoConfiguration is added to help you readily send messaging features with little configuration
 
-* #####Version: 0.0.1-SNAPSHOT
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Version: 0.0.1-SNAPSHOT
 
 ### How to set up? ###
 * Configuration
